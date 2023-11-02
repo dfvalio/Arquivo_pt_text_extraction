@@ -21,7 +21,7 @@ for filename in glob.glob('*.json'):
 		for i in data['response_items']:
 			list_url.append(i["linkToOriginalFile"])
 
-		result_name="./Extracted_texts_final_news_lang_detect/"+filename+".txt"
+		result_name="./Extracted_texts/"+filename+".txt"
 		result = codecs.open(result_name, mode="w",encoding="utf-8")
 
 		for url in list_url:
